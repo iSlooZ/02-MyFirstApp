@@ -19,10 +19,10 @@ export const CounterM3Screen = () => {
       <Icon name="accessibility-outline" size={25} />
 
       <FAB 
-        label="+1"
         style={fab}
         onPress={ () => setCount(count + 1) }
         onLongPress={ () => setCount(0) }
+        icon = "add-outline"
       />
     </View>
   )
