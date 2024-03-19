@@ -7,6 +7,15 @@ export const FlexDirectionScreen = () => {
       <View style={[styles.box, styles.box1]}/>
       <View style={[styles.box, styles.box2]}/>
       <View style={[styles.box, styles.box3]}/>
+      <View style={[styles.box, styles.box4]}/>
+      <View style={[styles.box, styles.box1]}/>
+      <View style={[styles.box, styles.box2]}/>
+      <View style={[styles.box, styles.box3]}/>
+      <View style={[styles.box, styles.box4]}/>
+      <View style={[styles.box, styles.box1]}/>
+      <View style={[styles.box, styles.box2]}/>
+      <View style={[styles.box, styles.box3]}/>
+      <View style={[styles.box, styles.box4]}/>
     </View>
   )
 }
@@ -17,9 +26,9 @@ const styles = StyleSheet.create({
     flex:1,
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'center'
-
-
+    alignItems: 'stretch',
+    flexWrap: 'wrap',
+    columnGap: 15
     // backgroundColor: 'gray',
   },
   box: {
@@ -29,7 +38,7 @@ const styles = StyleSheet.create({
   },
   box1:{
     backgroundColor: '#4c4ab1',
-    top:-100,
+    // top:-100,
   },
   box2: {
     backgroundColor: '#403e92',
@@ -37,6 +46,10 @@ const styles = StyleSheet.create({
   },
   box3: {
     backgroundColor: '#363575',
-    top:100,
+    // top:100,
+  },
+  box4: {
+    backgroundColor: '#252452',
+    // top:100,
   },
 })
